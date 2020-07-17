@@ -15,8 +15,11 @@ _A project to introduce the C# language and the .NET Core framework._
 
 | Behavior | Input | Output |  Completed(Y/N?)  |
 | -------- | ----- | ------ | -------- |
-
-
+|   User opens application       | N/A     |   "Welcome to Pierre's Bakery" Bread is $5 per Loaf. Buy 2 Get 1 Free! $2 for one Pastry. Buy 3 for $5     |      N     |
+|   User orders 1 loaf       | 1  loaf |   Your cost is $5    |      N     |
+| User orders 1 pastry | 1 pastry | Your cost is $2 | N |
+| User orders 3 loaves | 3 loaves | Your cost is $10 | N |
+| User orders 3 pastries | 3  pastries | Your cost is $5 | N |
 
 ## Setup/Installation Requirements
 
