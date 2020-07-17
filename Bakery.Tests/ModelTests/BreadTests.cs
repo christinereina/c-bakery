@@ -14,5 +14,15 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
+    [TestMethod]
+    public void GetBreadName_ReturnsBreadName_String()
+    {
+      string BreadName = "Red Bean Bread";
+      Bread newBread = new Bread(BreadName);
+      string choice = newBread.BreadName;
+      Assert.AreEqual(BreadName, choice);
+    }
+
+
   }
 }
