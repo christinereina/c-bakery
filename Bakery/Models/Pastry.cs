@@ -3,7 +3,12 @@ namespace Bakery.Models
   public class Pastry
   {
 
-    // properties, methods, etc. will go here.
+    public string PastryName { get; }
+
+    public Pastry(string pastryName)
+    {
+      PastryName = pastryName;
+    }
 
   }
 }

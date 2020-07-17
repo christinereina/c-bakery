@@ -13,5 +13,14 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
+    [TestMethod]
+    public void GetPastryName_ReturnsPastryName_String()
+    {
+      string pastryName = "Chocolate Croissant";
+      Bread newPastry = new Bread(pastryName);
+      string choice = newPastry.PastryName;
+      Assert.AreEqual(pastryName, choice);
+    }
+
   }
 }
