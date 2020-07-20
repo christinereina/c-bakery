@@ -14,12 +14,12 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newName.GetType());
     }
 
-    //   [TestMethod]
-    // public void IsBread_CheckIfBreadcd_Bool()
-    // {
-    //   Score newWord = new Score("word");
-    //   Assert.AreEqual(true, newWord.IsWord("word"));
-    // }
+      [TestMethod]
+    public void IsBread_CheckIfBread_Bool()
+    {
+      Bread newName = new Bread("vanilla");
+      Assert.AreEqual(true, newName.IsBread("vanilla"));
+    }
 
 
   }
