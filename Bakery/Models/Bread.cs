@@ -11,10 +11,10 @@ namespace Bakery.Models
     {
       Name = name;
     }
-    // public bool IsBread(string name)
-    // {
-    //   return true;
-    // }
+    public bool IsBread(string name)
+    {
+      return true;
+    }
     public Dictionary<string, int> AssignValues()
     {
     Dictionary<string, int> breadOrder = new Dictionary<string, int>() 
