@@ -8,20 +8,18 @@ namespace Bakery.Tests
   {
 
     [TestMethod]
-    public void BreadConstructor_CreatesInstanceOfItem_Bread()
+    public void TestConstructor_CreateInstanceOfBread_Name()
     {
-      Bread newBread = new Bread("Red Bean Bread");
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Bread newName = new Bread("vanilla");
+      Assert.AreEqual(typeof(Bread), newName.GetType());
     }
 
-    [TestMethod]
-    public void GetBreadName_ReturnsBreadName_String()
-    {
-      string breadName = "Red Bean Bread";
-      Bread newBread = new Bread(breadName);
-      string choice = newBread.BreadName;
-      Assert.AreEqual(breadName, choice);
-    }
+    //   [TestMethod]
+    // public void IsBread_CheckIfBreadcd_Bool()
+    // {
+    //   Score newWord = new Score("word");
+    //   Assert.AreEqual(true, newWord.IsWord("word"));
+    // }
 
 
   }

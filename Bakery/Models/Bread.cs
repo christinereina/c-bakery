@@ -7,21 +7,22 @@ namespace Bakery.Models
 {
   public string Name {get; set;}
   
-  public Bread(string word)
+  public Bread(string name)
     {
       Name = name;
     }
-    public bool IsBread(string word)
+    public bool IsBread(string name)
     {
       return true;
     }
-    public Dictionary<char, int> AssignValues()
+    public Dictionary<string, int> AssignValues()
     {
-      Dictionary<char, int> bread = new Dictionary<string, int> 
-      {{'Red Bean', 3},
-      {'White', 2},
-      {'Rye', 4}};
-      return bread;
+    Dictionary<string, int> breadOrder = new Dictionary<string, int>() 
+    { {"vanilla", 5}, 
+    {"chocolate", 5}, 
+    {"raspberry", 5}, 
+    {"caramel apple", 5} };
+    return breadOrder;
     }
 }
 }
