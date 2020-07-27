@@ -36,7 +36,7 @@ namespace Bakery.Tests
     public void CalculatesFinalPrice_ReturnsPriceBasedOnBreadAmount_Int()
     {
       int breadCost = 5;
-      int breadCount = 50;
+      int breadCount = 2;
       Bread newBread = new Bread(breadCount);
       newBread.FinalBreadCost();
       int result = newBread.Cost;
