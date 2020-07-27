@@ -8,17 +8,27 @@ namespace Bakery.Tests
   {
 
     [TestMethod]
-    public void TestConstructor_CreateInstanceOfBread_Cost()
+   public void TestConstructor_CreateInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread(5);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+
+    [TestMethod]
+    public void CreatesCost_CreateBreadCost_Int()
     {
       Bread newCost = new Bread(5);
       Assert.AreEqual(typeof(Bread), newCost.GetType());
     }
 
     [TestMethod]
-   public void TestConstructor_CreateInstanceOfBread_Bread()
+    public void CountsBreadAmount_ReturnsBreadAmount_Int()
     {
-      Bread newBread = new Bread("5");
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      int breadCount = "fifty";
+      Bread newBread = new Bread(breadCount);
+      int result = newBread.BreadAmount;
+      Assert.AreEqual(breadCount, result);
     }
+
   }
   }
