@@ -8,19 +8,10 @@ namespace Bakery.Tests
   {
 
     [TestMethod]
-    public void TestConstructor_CreateInstanceOfBread_Name()
+    public void TestConstructor_CreateInstanceOfBread_Cost()
     {
-      Bread newName = new Bread("vanilla");
-      Assert.AreEqual(typeof(Bread), newName.GetType());
+      Bread newCost = new Bread();
+      Assert.AreEqual(typeof(Bread), newCost.GetType());
     }
-
-      [TestMethod]
-    public void IsBread_CheckIfBread_Bool()
-    {
-      Bread newName = new Bread("vanilla");
-      Assert.AreEqual(true, newName.IsBread("vanilla"));
-    }
-
-
   }
-}
+  }

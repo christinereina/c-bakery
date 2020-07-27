@@ -3,27 +3,15 @@ using System.Collections.Generic;
 
 namespace Bakery.Models
 {
-  public class Bread
+  public class Bread 
 {
-  public string Name {get; set;}
-  
-  public Bread(string name)
+
+  public int Cost { get; set; }
+  public Bread()
     {
-      Name = name;
+      Cost = 5;
     }
-    public bool IsBread(string name)
-    {
-      return true;
-    }
-    public Dictionary<string, int> AssignValues()
-    {
-    Dictionary<string, int> breadOrder = new Dictionary<string, int>() 
-    { {"vanilla", 5}, 
-    {"chocolate", 5}, 
-    {"raspberry", 5}, 
-    {"caramel apple", 5} };
-    return breadOrder;
-    }
+
 }
 }
 

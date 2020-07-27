@@ -6,7 +6,7 @@ namespace Bakery.Models
   public class Pastry
   {
 
-    public string PastryName { get; }
+    public string PastryName { get; set;}
 
     public Pastry(string pastryName)
     {
