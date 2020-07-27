@@ -17,7 +17,7 @@ namespace Bakery.Tests
     [TestMethod]
    public void TestConstructor_CreateInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread("flour");
+      Bread newBread = new Bread("5");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
   }
