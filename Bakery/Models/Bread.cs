@@ -15,6 +15,14 @@ namespace Bakery.Models
       BreadAmount = breadAmount;
     }
 
+   public void FinalBreadCost()
+    {
+      int finalCost = Cost * BreadAmount;
+      if (BreadAmount % 5 == 0) 
+      {
+        Cost -= 5;
+      } 
+    }
 }
 }
 
