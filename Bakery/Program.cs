@@ -8,7 +8,7 @@ namespace Bakery
   {
     public static void Main()
     {
-      Console.WriteLine(" 6Welcome to Pusheen's Bakery");
+      Console.WriteLine(" Welcome to Pusheen's Bakery");
       Console.WriteLine("🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞🍞");
       Console.WriteLine(" 🍞🍞🍞🍞🍞 Bread 🍞🍞🍞🍞🍞 ");
       Console.WriteLine("      One Loaf is $5");
