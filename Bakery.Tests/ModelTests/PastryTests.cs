@@ -14,13 +14,22 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
-       [TestMethod]
-    public void CreatesCost_CreateBreadCost_Int()
+    [TestMethod]
+    public void CreatesCost_CreatePastryCost_Int()
     {
-      int breadCost = 5;
-      Bread newBread = new Bread(1);
-      int result = newBread.Cost;
-      Assert.AreEqual(breadCost, result);
+      int pastryCost = 2;
+      Pastry newPastry = new Pastry();
+      int result = newPastry.Cost;
+      Assert.AreEqual(pastryCost, result);
+    }
+
+    [TestMethod]
+    public void CountsPastryAmount_ReturnsPastryAmount_Int()
+    {
+      int pastryCount = 50;
+      Pastry newPastry = new Pastry(pastryCount);
+      int result = newPastry.PastryAmount;
+      Assert.AreEqual(pastryCount, result);
     }
 }
 }
