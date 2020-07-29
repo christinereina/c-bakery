@@ -3,4 +3,15 @@ using Bakery.Models;
 
 namespace Bakery.Tests
 {
+    [TestClass]
+  public class PastryTests
+  {
+
+    [TestMethod]
+   public void TestConstructor_CreateInstanceOfPastry_Pastry()
+    {
+      Pastry newPastry = new Pastry();
+      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+}
 }
