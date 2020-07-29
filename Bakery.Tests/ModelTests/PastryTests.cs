@@ -3,7 +3,7 @@ using Bakery.Models;
 
 namespace Bakery.Tests
 {
-    [TestClass]
+  [TestClass]
   public class PastryTests
   {
 
@@ -12,6 +12,15 @@ namespace Bakery.Tests
     {
       Pastry newPastry = new Pastry();
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
+    }
+
+       [TestMethod]
+    public void CreatesCost_CreateBreadCost_Int()
+    {
+      int breadCost = 5;
+      Bread newBread = new Bread(1);
+      int result = newBread.Cost;
+      Assert.AreEqual(breadCost, result);
     }
 }
 }
