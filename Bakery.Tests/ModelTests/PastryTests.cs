@@ -17,10 +17,10 @@ namespace Bakery.Tests
     [TestMethod]
     public void CreatesCost_CreatePastryCost_Int()
     {
-      int pastryCost = 2;
-      Pastry newPastry = new Pastry(1);
+      int cost = 2;
+       Pastry newPastry = new Pastry(cost);
       int result = newPastry.Cost;
-      Assert.AreEqual(pastryCost, result);
+      Assert.AreEqual(cost, result);
     }
 
     [TestMethod]

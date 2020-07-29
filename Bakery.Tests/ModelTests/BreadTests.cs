@@ -15,6 +15,15 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
+    public void CreatesCost_CreateBreadCost_Int()
+    {
+      int cost = 5;
+      Bread newBread = new Bread(cost);
+      int result = newBread.Cost;
+      Assert.AreEqual(cost, result);
+    }
+
+    [TestMethod]
     public void CountsBreadAmount_ReturnsBreadAmount_Int()
     {
       int breadCount = 5;
