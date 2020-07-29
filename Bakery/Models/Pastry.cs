@@ -6,5 +6,7 @@ namespace Bakery.Models
   public class Pastry
   {
 
+  public int Cost { get; set; }
+
   }
 }
