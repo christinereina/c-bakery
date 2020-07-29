@@ -9,11 +9,24 @@ namespace Bakery.Models
 
   public int PastryAmount {get; set;}
 
-    public Pastry(int pastryAmount)
+  public Pastry(int pastryAmount)
+  {
+    Cost = 2;
+    PastryAmount = pastryAmount;
+  }
+
+  public int FinalPastryCost()
+  {
+    int finalCost = Cost * PastryAmount;
+    for (int i =0; i < PastryAmount; i++)
     {
-      Cost = 2;
-      PastryAmount = pastryAmount;
+      if (i % 3 == 0) 
+      {
+        finalCost -= 1;
+      } 
     }
+     return finalCost;
+  }
 
   }
 }

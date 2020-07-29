@@ -35,12 +35,9 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculatesFinalPrice_ReturnsPriceBasedOnPastryAmount_Int()
     {
-      int pastryCost = 3;
-      int pastryCount = 2;
-      Pastry newPastry = new Pastry(pastryCount);
+      Pastry newPastry = new Pastry(3);
       newPastry.FinalPastryCost();
-      int result = newPastry.Cost;
-      Assert.AreEqual(pastryCost, result);
+      Assert.AreEqual(5, newPastry.FinalPastryCost());
     }
 }
 }

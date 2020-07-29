@@ -35,12 +35,9 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculatesFinalPrice_ReturnsPriceBasedOnBreadAmount_Int()
     {
-      int breadCost = 5;
-      int breadCount = 2;
-      Bread newBread = new Bread(breadCount);
+       Bread newBread = new Bread(3);
       newBread.FinalBreadCost();
-      int result = newBread.Cost;
-      Assert.AreEqual(breadCost, result);
+      Assert.AreEqual(10, newBread.FinalBreadCost());
     }
 
   }
