@@ -15,18 +15,9 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void CreatesCost_CreateBreadCost_Int()
-    {
-      int breadCost = 5;
-      Bread newBread = new Bread(1);
-      int result = newBread.Cost;
-      Assert.AreEqual(breadCost, result);
-    }
-
-    [TestMethod]
     public void CountsBreadAmount_ReturnsBreadAmount_Int()
     {
-      int breadCount = 50;
+      int breadCount = 5;
       Bread newBread = new Bread(breadCount);
       int result = newBread.BreadAmount;
       Assert.AreEqual(breadCount, result);
@@ -35,7 +26,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void CalculatesFinalPrice_ReturnsPriceBasedOnBreadAmount_Int()
     {
-       Bread newBread = new Bread(3);
+      Bread newBread = new Bread(3);
       newBread.FinalBreadCost();
       Assert.AreEqual(10, newBread.FinalBreadCost());
     }
