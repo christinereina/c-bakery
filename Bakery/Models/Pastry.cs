@@ -8,7 +8,6 @@ namespace Bakery.Models
   public int Cost { get; set; }
 
   public int PastryAmount {get; set;}
-
   public Pastry(int pastryAmount)
   {
     Cost = 2;
@@ -17,16 +16,19 @@ namespace Bakery.Models
 
   public int FinalPastryCost()
   {
-    int finalCost = Cost * PastryAmount;
-    for (int i =0; i < PastryAmount; i++)
+    int finalCost = 0;
+    for (int i =1; i <= PastryAmount; i++)
     {
-      if (i % 3 == 0) 
+      if (i % 3 != 0) 
       {
-        finalCost -= 1;
+        finalCost += Cost;
       } 
+      else 
+      {
+      finalCost = ++Cost;
+      }
     }
      return finalCost;
   }
-
   }
 }

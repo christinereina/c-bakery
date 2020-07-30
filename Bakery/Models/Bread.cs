@@ -14,17 +14,16 @@ namespace Bakery.Models
       Cost = 5;
       BreadAmount = breadAmount;
     }
-
    public int FinalBreadCost()
     {
-      int finalCost = Cost * BreadAmount;
-        for (int i =0; i < BreadAmount; i++)
+      int finalCost = 0;
+        for (int i =1; i <= BreadAmount; i++)
         {
-          if (i % 3 == 0) 
+          if (i % 3 != 0) 
           {
-              finalCost -= 5;
+            finalCost += Cost;
           }
-        }
+        } 
         return finalCost;
       } 
     }
