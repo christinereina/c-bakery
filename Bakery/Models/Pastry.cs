@@ -25,7 +25,7 @@ namespace Bakery.Models
       } 
       else 
       {
-      finalCost = ++Cost;
+        finalCost++;
       }
     }
      return finalCost;
